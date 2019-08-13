@@ -1,0 +1,39 @@
+Package: AnomalyDetection
+Type: Package
+Title: Anomaly Detection Using Seasonal Hybrid Extreme Studentized Deviate Test
+Version: 2.0.1
+Date: 2018-04-20
+Authors@R: c(
+    person("Owen", "Vallis", email = "owensvallis@gmail.com",, role = c("aut", "cre")),
+    person("Jordan", "Hochenbaum", email = "jhochenbaum@gmail.com", role = "aut"),
+    person("Arun", "Kejariwal", email = "zdkurtz@gmail.com", role = "aut"),
+    person("Bob", "Rudis", email = "bob@rud.is", role = c("aut", "ctb"),
+           comment = c(ORCID = "0000-0001-5670-2640")),
+    person("Yuan", "Tang", role = c("aut", "cph"),
+         email = "terrytangyuan@gmail.com",
+         comment = c(ORCID = "0000-0001-5243-233X")), 
+    person("Chris", "Muir", email = "chrismuirrva@gmail.com", role = c("ctb")), 
+    person("Jun", "Cai", role = c("ctb"),
+         email = "cai-j12@mails.tsinghua.edu.cn",
+         comment = c(ORCID = "0000-0001-9495-1226"))
+  )
+Maintainer: 
+    Owen S. Vallis <owensvallis@gmail.com>, 
+    Jordan Hochenbaum <jhochenbaum@gmail.com>
+Description: A technique for detecting anomalies in seasonal univariate time series.
+   The methods uses are robust, from a statistical standpoint, in the presence of 
+   seasonality and an underlying trend. These methods can be used in 
+   wide variety of contexts. For example, detecting anomalies in system metrics after 
+   a new software release, user engagement post an 'A/B' test, or for problems in 
+   econometrics, financial engineering, political and social sciences.
+ByteCompile: yes
+Encoding: UTF-8
+Imports: 
+  stringi, 
+  lubridate,
+  stats
+Depends: R (>= 3.0.0)
+Suggests: testthat
+License: GPL-3
+LazyData: true
+RoxygenNote: 6.0.1
