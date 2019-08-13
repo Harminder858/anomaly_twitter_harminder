@@ -317,7 +317,7 @@ AnomalyDetectionTs <- function(x, max_anoms = 0.10, direction = "pos",
 
   class(anoms) <- c("tbl_df", "tbl", "data.frame")
 
-  return(anoms)
+  return(anoms,data_decomp)
 }
 
 #' @rdname AnomalyDetectionTs
